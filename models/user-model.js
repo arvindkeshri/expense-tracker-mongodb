@@ -6,7 +6,7 @@ const userSchema =new mongoose.Schema({
     email: String,
     password: String,
     ispremiumuser: Boolean,
-    total: Number
+    total: {type: Number, default: 0}
 
     }, 
     { timestamps: false} //disables createdat and updatedat

@@ -18,7 +18,7 @@ const addExpense = async (req, res) => {
             await newExpense.save();
             
             const user = await User.findOne({_id: userId});
-            user.total += newExpense.amount; 
+            user.total =user.total +  newExpense.amount; 
             await user.save();
 
             return res.status(200).json({expense: newExpense}); 

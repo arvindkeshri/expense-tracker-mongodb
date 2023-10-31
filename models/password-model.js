@@ -2,14 +2,10 @@ const mongoose = require('mongoose');
 
 
 const resetpasswordSchema = new mongoose.Schema({
-    id: {
-        type: mongoose.Schema.Types.ObjectId,
-        allowNull: false,
-        primaryKey: true
-    },
-
-active: Boolean,
-expireby: Date
+    uid: String,
+    userId: String,
+    active: Boolean,
+    expireby: Date
 
 })
 
