@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catch</title>
+    <link rel="stylesheet" href="daily-expenses.css">
+
+</head>
+<body>
+  <div class="container">
+    <div class="daily-expenses">
+        <h1> Daily Expenses Table</h1>
+        <h6 id="premiumuser"></h6>
+        <button class = "leaderboard-button" id="leaderboardbtn" hidden>Show Leaderboard</button>
+        <button class="premium" id="premiumbutton">Buy Premium</button>
+        <button class = "add-button" id="leaderboardbtn" hidden>Show Leaderboard</button>
+        <!-- <img src="../images/icon.png" alt=""> -->
+        <form  id="form" >
+            <div class="input-group">
+                <input type="number" id="amount" placeholder="Amount">
+            </div>
+            <div class="input-group">
+                <input type="text" id="description" placeholder="Describe your expense">
+            </div>
+            <div class="input-group">
+                <select name="field" id="field">
+                    <option value="Food" id="food">Food</option>
+                    <option value="Travel" id="travel">Travel</option>
+                    <option value="Rent" id="rent">Rent</option>
+                    <option value="Entertainment" id="entertainment">Entertainment</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <button class="add-button" id="addbutton">Add</button>
+                
+            </div>             
+        </form>
+        <div class="list-container">
+            <!-- <h2>Your Expenses</h2> -->
+              <div class="daily-expenses">
+                <div class="table">
+                <table id="table" class="table">                      
+                        <th>Amount</th>
+                        <th>Description</th>
+                        <th>Category</th>
+                        <th>Action</th>       
+                  </table>
+                  <button class="add-button" id="downloadBtn">Download File</button>
+              </div>
+              
+            </div>
+
+            <div class="pagination" id="pagination"></div>
+
+            
+            <!-- <ul id="leaderboardlist"> -->
+                <div class="list-container">
+                 
+                    
+                      <div class="daily-expenses">
+                        <div class="table">
+                        <table id="leaderboardtable" class="table"> 
+                            <h2>Leaderboard</h2>                     
+                                <th>Ranking</th>
+                                <th>Total Expenses</th>
+                                <th>Name</th>    
+                          </table>
+                      </div>
+                      
+                    </div>
+        
+    
+            <!-- </ul> -->
+        </div>
+      
+    </div>
+  </div>  
+  <script src="daily-expenses.js"></script>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+</body>
+</html>

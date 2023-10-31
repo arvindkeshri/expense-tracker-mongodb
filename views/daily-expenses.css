@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+.container{
+    width: 100%;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px;
+    position:relative;
+
+}
+
+.premium {
+    position: relative;
+    top: 0;
+    right: 0;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 9px 18px;
+    background:  #478ad2;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+#premiumbutton:hover {
+    background-color: #102475; /* Darker blue on hover */
+}
+
+.daily-expenses{
+    width: 100%;
+    max-width: 950px;
+    background: #ffff;
+    margin: 10px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+
+
+}
+
+.daily-expenses h1{
+    color:  #002765;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position:relative;
+    left: 50%;
+    top: 3%;
+    transform: translateX(-50%);
+
+}
+
+.daily-expenses h2 img{
+    width: 30px;
+    margin-left: 10px;  
+}
+
+.input-group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 30px;
+    padding-left: 15px;
+    margin-bottom: 25px;
+}
+
+input, select{
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+}
+
+.input-group{
+    margin-bottom: 15px;
+}
+
+.add-button{
+    border: none;
+    outline: none;
+    padding: 13px 48px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 40px;
+
+    
+}
+#addbutton:hover {
+    background-color: #f70d0d; /* Darker blue on hover */
+}
+
+#downloadBtn:hover {
+    background-color: #f70d0d; /* Darker blue on hover */
+}
+#leaderboardbtn:hover {
+    background-color: #f70d0d; /* Darker blue on hover */
+}
+
+ul li{
+    list-style: none;
+    font-size:17px ;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content:'';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    /* background-image: url(../images/unchecked.png); */
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 12px;
+}
+
+.delete-button{
+    border: none;
+    outline: none;
+    padding: 7px 12px;
+    background: #85807f;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: 650;
+    border-radius: 4px;
+    
+}
+
+.delete-button:hover {
+    background-color: #060914; /* Darker blue on hover */
+}
+
+
+/* Apply basic styles to the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    margin-top: 20px; /* Add some margin for spacing */
+  }
+  
+  /* Style table headers (th) */
+  th {
+    background-color: #fbfaf9;
+    color: #555;
+    font-size: large;
+    padding: 6px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  
+  td {
+    padding: 5px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  /* Apply an alternate row background color for better readability */
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  
+  tr:hover {
+    background-color: #e0e0e0;
+  }
+  
+
+  #downloadBtn{
+    padding: 6px 8px;
+    position: relative;
+    top: 8px;
+    right: -400px;
+    border-radius: 20px;
+    
+
+  }
+
+  .leaderboard-button{
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background: linear-gradient(55deg, #ff7f50,  #e84432);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    transition: background-color 0.3s;    
+}
+
+#leaderboardbtn:hover {
+    background-color: #f8f40a; /* Darker blue on hover */
+}
+
+h2{
+    margin: 0;
+    padding: 0;
+}
+.daily-expenses.table{
+    margin-top: 10px;
+}
